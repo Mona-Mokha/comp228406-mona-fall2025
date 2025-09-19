@@ -8,6 +8,7 @@ public class SingersDriver {
         singer1.displaySingerInfo();
         System.out.println("****************************");
 
+
         singer1.setAllValues(1,"Fadl","Lebanon", "Sep 20, 1950", 60);
         System.out.println("All values of singer1: ");
         singer1.displaySingerInfo();
@@ -25,6 +26,11 @@ public class SingersDriver {
         System.out.println("Singer Address: " + singer1.getSingerAddress());
         System.out.println("Singer Date of Birth: " + singer1.getDateOfBirth());
         System.out.println("Singer Number of Albums Published: " + singer1.getNumberOfAlbumsPublished());
+        System.out.println("****************************");
+
+        Singers singer2 = new  Singers(3,"Hafiz", "Cairo", "June 10,1920", 500);
+        System.out.println("Default values of singer2: ");
+        singer2.displaySingerInfo();
 
 
     }
