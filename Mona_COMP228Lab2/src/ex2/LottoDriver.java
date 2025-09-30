@@ -28,9 +28,9 @@ public class LottoDriver {
             int sum = lotto.getSum();
 
             int[] nums = lotto.getNumbers();
-            String numbersStr = "";
+            StringBuilder numbersStr = new StringBuilder();
             for (int n : nums) {
-                numbersStr += n + " ";
+                numbersStr.append(n).append(" ");
             }
 
 
