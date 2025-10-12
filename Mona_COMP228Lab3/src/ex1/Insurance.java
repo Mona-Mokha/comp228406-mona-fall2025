@@ -17,7 +17,7 @@ public abstract class Insurance {
     }
 
     public abstract void setInsuranceCost(double monthlyCost);
-     public abstract void displayInfo() ;
+    public abstract void displayInfo() ;
 }
 
 

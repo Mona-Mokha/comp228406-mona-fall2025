@@ -13,7 +13,7 @@ public void setInsuranceCost(double monthlyCost){
 
 @Override
 public void displayInfo() {
-    System.out.println("Insurance Type: " + getTypeOfInsurance() + ",Monthly Fee: $" + getMonthlyCost());
+    System.out.println("Insurance Type: " + getTypeOfInsurance() + ",Monthly Cost: $" + getMonthlyCost());
 }
 
 }

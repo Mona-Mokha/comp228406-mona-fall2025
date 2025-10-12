@@ -10,7 +10,7 @@ public class Health extends Insurance {
     }
     @Override
     public void displayInfo(){
-        System.out.println("Type: " + getTypeOfInsurance() + ", Monthly Cost: $" + getMonthlyCost());
+        System.out.println("Insurance Type: " + getTypeOfInsurance() + ", Monthly Cost: $" + getMonthlyCost());
     }
 }
 

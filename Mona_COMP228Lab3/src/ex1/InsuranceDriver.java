@@ -23,7 +23,7 @@ public class InsuranceDriver {
                 return; // exit
             }
 
-            System.out.print("Enter monthly cost: ");
+            System.out.print("Enter the monthly fee: ");
             double monthlyCost = sc.nextDouble();
             sc.nextLine(); // consume leftover newline
 
@@ -31,11 +31,11 @@ public class InsuranceDriver {
             policies[i] = policy;
         }
 
-        System.out.println("\n====Insurance Policies====");
+        System.out.println("\n====Insurance Information:====");
         for (Insurance ins : policies) {
             ins.displayInfo();
         }
 
-        sc.close();
+
     }
 }
