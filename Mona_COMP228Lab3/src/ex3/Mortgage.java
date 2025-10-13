@@ -13,24 +13,27 @@ public abstract class Mortgage implements MortgageConstants {
        if (mortgageAmount > Max_Amount) {
            this.mortgageAmount = Max_Amount;
        } else {
-           this.mortgageAmount = mortgageNumber;}
+           this.mortgageAmount = mortgageAmount;}
        this.interestRate = interestRate;
+
        if (term != SHORT_TERM && term != MEDIUM_TERM && term != LONG_TERM) {
            this.term = SHORT_TERM; }
        else {
-           this.term = MEDIUM_TERM; }
+           this.term = term; }
 
        }
-       public String getMortgageInfo() {
-           return "Bank name: " + BANK_NAME +
-                   "\nMortgage Number: " + mortgageNumber +
-                   "\nCustomer Name: " + customerName +
-                   "\nMortgage Amount: " + mortgageAmount +
-                   "\nInterest Rate: " + interestRate + "%" +
-                   "\nTerm: " + term + " years" +
-                   "\nTotal Owed: $" + (mortgageAmount + (mortgageAmount * interestRate / 100 * term)) + "\n";
-       }
-       }
+    public String getMortgageInfo() {
+        return "Bank name: " + BANK_NAME +
+                "\nMortgage Number: " + mortgageNumber +
+                "\nCustomer Name: " + customerName +
+                "\nMortgage Amount: $" + String.format("%,.2f", mortgageAmount) +
+                "\nInterest Rate: " + interestRate + "%" +
+                "\nTerm: " + term + " year(s)" +
+                "\nTotal Owed: $" + String.format("%,.2f", (mortgageAmount + (mortgageAmount * interestRate / 100 * term))) +
+                "\n";
+    }
+
+}
 
 
 

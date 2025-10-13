@@ -11,11 +11,11 @@ public class ProcessMortgage {
         Mortgage[] mortgages = new Mortgage[3];
 
         for(int i = 0; i < mortgages.length; i++) {
-            System.out.println("Mortgage number " + (i + 1) + ": ");
+            System.out.println("Mortgage Entry number " + (i + 1) + ": ");
             System.out.print("Enter Mortgage Type(business/personal): ");
             String type = scan.next().toLowerCase();
 
-            System.out.print("Enter Mortgage Number: ");
+            System.out.print("Enter Mortgage ID Number: ");
             int number = scan.nextInt();
             scan.nextLine();
 
@@ -41,6 +41,7 @@ public class ProcessMortgage {
         System.out.println("\n******* Mortgages Information *******");
         for( Mortgage m : mortgages) {
             System.out.println(m.getMortgageInfo());
+            System.out.println("_________________________");
         }
 
 
