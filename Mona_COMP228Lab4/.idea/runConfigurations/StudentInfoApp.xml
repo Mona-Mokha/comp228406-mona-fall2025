@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="StudentInfoApp" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.example.lab4.StudentInfoApp" />
+    <module name="Mona_COMP228Lab4" />
+    <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\memej\.m2\repository\org\openjfx\javafx-controls\21.0.6;C:\Users\memej\.m2\repository\org\openjfx\javafx-fxml\21.0.6;C:\Users\memej\.m2\repository\org\openjfx\javafx-graphics\21.0.6;C:\Users\memej\.m2\repository\org\openjfx\javafx-base\21.0.6&quot; --add-modules javafx.controls,javafx.fxml " />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
