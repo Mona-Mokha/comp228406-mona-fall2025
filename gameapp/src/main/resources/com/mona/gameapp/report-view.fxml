@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
+    <Label text="Select Player:"/>
+    <ComboBox fx:id="playerComboBox"/>
+
+    <Button text="Show Report" fx:id="showReportButton"/>
+
+    <TableView fx:id="reportTable">
+        <columns>
+            <TableColumn text="Game Title" fx:id="gameTitleColumn"/>
+            <TableColumn text="Date Played" fx:id="dateColumn"/>
+            <TableColumn text="Score" fx:id="scoreColumn"/>
+        </columns>
+    </TableView>
+</VBox>

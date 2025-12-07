@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
+    <Label text="Game Title:"/>
+    <TextField fx:id="gameTitleField"/>
+
+    <Button text="Add Game" fx:id="addGameButton"/>
+</VBox>
