@@ -1,7 +1,7 @@
 package com.mona.gameapp.model;
 
-public class Player {
-    private long playerId;
+    public class Player {
+    private Long playerId;
     private String firstName;
     private String lastName;
     private String address;

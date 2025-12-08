@@ -9,4 +9,8 @@ module com.mona.gameapp {
 
     exports com.mona.gameapp;
     exports com.mona.gameapp.controller;
+    exports com.mona.gameapp.dao;     // <-- add this
+    exports com.mona.gameapp.model;
+    exports com.mona.gameapp.db;
+
 }

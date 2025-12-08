@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
 
-<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.mona.gameapp.controller.GameController">
+
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
     <Label text="Game Title:"/>
     <TextField fx:id="gameTitleField"/>
 
-    <Button text="Add Game" fx:id="addGameButton"/>
+    <HBox spacing="10">
+        <!-- Wire buttons to controller methods -->
+        <Button text="Insert Game" onAction="#insertGame"/>
+        <Button text="Show All Games" onAction="#refreshGames"/>
+    </HBox>
+
+    <TableView fx:id="gameTable" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="gameIdColumn" text="ID" prefWidth="80"/>
+            <TableColumn fx:id="gameTitleColumn" text="Title" prefWidth="300"/>
+        </columns>
+    </TableView>
 </VBox>

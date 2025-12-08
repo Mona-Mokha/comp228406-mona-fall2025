@@ -2,18 +2,27 @@
 
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
 
-<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.mona.gameapp.controller.ReportController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <Label text="Select Report Type:"/>
+    <ComboBox fx:id="reportTypeCombo"/>
+
     <Label text="Select Player:"/>
     <ComboBox fx:id="playerComboBox"/>
 
-    <Button text="Show Report" fx:id="showReportButton"/>
+    <Button fx:id="showReport" text="Show Report" onAction="#showReport"/>
 
-    <TableView fx:id="reportTable">
+    <TableView fx:id="reportTable" prefHeight="450">
         <columns>
-            <TableColumn text="Game Title" fx:id="gameTitleColumn"/>
-            <TableColumn text="Date Played" fx:id="dateColumn"/>
-            <TableColumn text="Score" fx:id="scoreColumn"/>
+            <TableColumn fx:id="rptPlayerColumn" text="Player" prefWidth="180"/>
+            <TableColumn fx:id="rptGameTitleColumn" text="Game Title" prefWidth="180"/>
+            <TableColumn fx:id="rptPlayedOnColumn" text="Played On" prefWidth="180"/>
+            <TableColumn fx:id="rptScoreColumn" text="Score" prefWidth="80"/>
         </columns>
     </TableView>
 </VBox>
