@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.mona.gameapp.controller.MainController">
+    <center>
+        <TabPane fx:id="mainTabPane" prefWidth="900" prefHeight="600">
+        <tabs>
+                <Tab text="Players">
+                    <fx:include source="player-view.fxml" fx:id="playerViewController"/>
+                </Tab>
+                <Tab text="Games">
+                    <fx:include source="game-view.fxml" fx:id="gameViewController"/>
+                </Tab>
+                <Tab text="Play Game">
+                    <fx:include source="playgame-view.fxml" fx:id="playGameViewController"/>
+                </Tab>
+
+                <Tab text="Reports">
+                    <fx:include source="report-view.fxml" fx:id="reportViewController"/>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>
